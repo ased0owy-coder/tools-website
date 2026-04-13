@@ -1,0 +1,7 @@
+{
+    "buildCommand": "pnpm --filter @workspace/tools-website run build",
+    "outputDirectory": "artifacts/tools-website/dist/public",
+    "installCommand": "pnpm install",
+    "framework": null
+  }
+  
