@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Search, ArrowRight, Sparkles, MessageCircleHeart, Type, QrCode, Camera, User, Mail, ExternalLink } from "lucide-react";
+import AdBanner from "@/components/AdBanner";
 
 const tools = [
   {
@@ -92,9 +93,7 @@ export default function HomePage() {
 
       {/* Ad Banner Top */}
       <div className="max-w-6xl mx-auto px-4 pt-4">
-        <div className="w-full h-16 rounded-xl border-2 border-dashed border-border bg-muted/40 flex items-center justify-center text-muted-foreground text-xs font-mono tracking-wide">
-          Advertisement
-        </div>
+        <AdBanner slot="1234567890" format="horizontal" />
       </div>
 
       {/* Hero */}
@@ -143,9 +142,7 @@ export default function HomePage() {
 
       {/* Ad Banner Middle */}
       <div className="max-w-6xl mx-auto px-4 py-6">
-        <div className="w-full h-24 rounded-xl border-2 border-dashed border-border bg-muted/40 flex items-center justify-center text-muted-foreground text-xs font-mono tracking-wide">
-          Advertisement
-        </div>
+        <AdBanner slot="0987654321" format="rectangle" />
       </div>
 
       {/* Contact Section */}
